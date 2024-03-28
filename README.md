@@ -4,6 +4,31 @@
 ### 源代码地址
 https://github.com/DHDAXCW/lede-rockchip
 
+### 支持设备
+```
+embedfire_doornet1
+embedfire_doornet2
+embedfire_lubancat-1n
+embedfire_lubancat-1
+embedfire_lubancat-2n
+embedfire_lubancat-2
+embedfire_lubancat-4
+embedfire_lubancat-5
+friendlyarm_nanopc-t6
+friendlyarm_nanopi-r2c
+friendlyarm_nanopi-r2s
+friendlyarm_nanopi-r4se
+friendlyarm_nanopi-r4s
+friendlyarm_nanopi-r5c
+friendlyarm_nanopi-r5s
+friendlyarm_nanopi-r6c
+friendlyarm_nanopi-r6s
+hinlink_h88k
+hinlink_opc-h66k
+hinlink_opc-h68k
+hinlink_opc-h69k
+```
+
 ### 固件默认配置
 - 用户名：`root` 密码：`password` 管理IP：`192.168.11.1`
 - 下载地址：https://github.com/DHDAXCW/OpenWrt_RockChip/releases 对应 Tag 标签内下载固件
