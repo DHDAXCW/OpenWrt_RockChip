@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: rockchip-full
+name: openwrt-rockchip
 
 on:
   repository_dispatch:
@@ -152,27 +152,27 @@ jobs:
         make target/install -j$(nproc) || make target/install -j1 V=s
         pushd bin/targets/rockchip/armv8
         rm -rf *ext4* *.manifest packages *.json *.buildinfo
-        mv openwrt-rockchip-armv8-embedfire_doornet1-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_doornet1-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_doornet2-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_doornet2-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-1n-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-1n-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-1-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-1-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-2n-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-2n-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-2-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-2-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-4-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-4-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat-5-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-embedfire_lubancat-5-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopc-t6-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopc-t6-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r2c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r2c-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r4se-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r4se-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r4s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r4s-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r5c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r5c-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r5s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r5s-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r6c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r6c-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r6s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-friendlyarm_nanopi-r6s-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-hinlink_h88k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-hinlink_h88k-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-hinlink_opc-h66k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-hinlink_opc-h66k-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-hinlink_opc-h68k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-hinlink_opc-h68k-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-hinlink_opc-h69k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-full-hinlink_opc-h69k-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_doornet1-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_doornet1-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_doornet2-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_doornet2-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-1n-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-1n-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-1-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-1-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-2n-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-2n-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-2-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-2-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-4-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-4-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat-5-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-embedfire_lubancat-5-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopc-t6-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopc-t6-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r2c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r2c-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r4se-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r4se-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r4s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r4s-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r5c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r5c-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r5s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r5s-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r6c-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r6c-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-friendlyarm_nanopi-r6s-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-friendlyarm_nanopi-r6s-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-hinlink_h88k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-hinlink_h88k-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-hinlink_opc-h66k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-hinlink_opc-h66k-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-hinlink_opc-h68k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-hinlink_opc-h68k-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-hinlink_opc-h69k-squashfs-sysupgrade.img.gz $(date +"%Y.%m.%d")-openwrt-hinlink_opc-h69k-squashfs-sysupgrade.img.gz
         popd
         make checksum
         mv bin/targets/rockchip/armv8/sha256sums bin/targets/rockchip/armv8/full-sha256sums
@@ -194,7 +194,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          name: ${{ steps.tag.outputs.release_date }} rockchip下载固件
+          name: ${{ steps.tag.outputs.release_date }} openwrt-rockchip-armv8 下载固件
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
