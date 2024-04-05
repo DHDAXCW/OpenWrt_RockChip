@@ -44,8 +44,7 @@ hinlink_opc-h69k
 6. 特调优化irq中断分配网卡绑定cpu
 
 ### 固件展示
-![1712278015964](https://github.com/DHDAXCW/OpenWrt_RockChip/assets/74764072/d94ae4c8-050e-4c99-bc2b-a083a88003b5)
-
+<img width="1304" alt="image" src="https://github.com/DHDAXCW/OpenWrt_RockChip/assets/74764072/acc32c0b-a8aa-4250-88c1-a1d4d3f24ec2">
 
 ### 特别提示 [![](https://img.shields.io/badge/-个人免责声明-FFFFFF.svg)](#特别提示-)
 
