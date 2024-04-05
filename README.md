@@ -43,10 +43,9 @@ hinlink_opc-h69k
 5. 支持在线更新，从2024.03.27之后就能通过后台升级
 6. 特调优化irq中断分配网卡绑定cpu
 
-### 插件展示
- ![image](https://user-images.githubusercontent.com/74764072/223003561-fefd7792-0410-41c6-9a55-2a423f6888c7.png)
+### 固件展示
+![1712278015964](https://github.com/DHDAXCW/OpenWrt_RockChip/assets/74764072/d94ae4c8-050e-4c99-bc2b-a083a88003b5)
 
- ![image](https://user-images.githubusercontent.com/74764072/183227361-e8bdb023-5514-437d-97e8-e13ca4285035.png)
 
 ### 特别提示 [![](https://img.shields.io/badge/-个人免责声明-FFFFFF.svg)](#特别提示-)
 
