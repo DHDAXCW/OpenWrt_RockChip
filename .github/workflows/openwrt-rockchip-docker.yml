@@ -85,6 +85,7 @@ jobs:
         ../scripts/preset-clash-core.sh arm64
         ../scripts/preset-terminal-tools.sh
         echo '
+        CONFIG_TARGET_ROOTFS_PARTSIZE=2048
         CONFIG_DOCKER_CGROUP_OPTIONS=y
         CONFIG_DOCKER_NET_ENCRYPT=y
         CONFIG_DOCKER_NET_MACVLAN=y
