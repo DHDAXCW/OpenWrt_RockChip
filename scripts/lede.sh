@@ -45,7 +45,7 @@ git clone https://github.com/DHDAXCW/theme
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # alist
-git clone --depth=1 https://github.com/DHDAXCW/luci-app-alist
+git clone --depth=1 https://github.com/sbwml/luci-app-alist
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
