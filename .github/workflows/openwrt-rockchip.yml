@@ -70,6 +70,7 @@ jobs:
         git clone --depth=1 https://github.com/DHDAXCW/luci customfeeds/luci
         chmod +x ../scripts/*.sh
         ../scripts/hook-feeds.sh
+        
     - name: Install Feeds
       run: |
         cd $OPENWRTROOT
