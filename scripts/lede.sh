@@ -32,9 +32,6 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash
 
-# Add luci-app-poweroff
-git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
-
 # Add luci-theme
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
@@ -44,11 +41,11 @@ rm -rf ./luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 cp -f $GITHUB_WORKSPACE/data/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 git clone https://github.com/DHDAXCW/theme
 
-# Add subconverter
-git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+# Add luci-app-lucky
+git clone --depth=1 https://github.com/gdy666/luci-app-lucky
 
 # alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist
+git clone -b lua --depth=1 https://github.com/sbwml/luci-app-alist
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
@@ -63,6 +60,14 @@ export orig_version=$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk 
 export date_version=$(date -d "$(rdate -n -4 -p ntp.aliyun.com)" +'%Y-%m-%d')
 sed -i "s/${orig_version}/${orig_version} (${date_version})/g" zzz-default-settings
 popd
+
+rm -rf nas-packages-luci/luci/luci-app-istorex
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+rm -rf package/feeds/packages/libmbim
+rm -rf package/feeds/packages/lame
+rm -rf package/feeds/packages/apk
+rm -rf package/feeds/packages/adguardhome
 
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
