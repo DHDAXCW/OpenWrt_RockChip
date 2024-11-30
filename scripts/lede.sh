@@ -12,12 +12,6 @@
 mkdir package/community
 pushd package/community
 
-# Add Lienol's Packages
-git clone --depth=1 https://github.com/Lienol/openwrt-package
-rm -rf ../../customfeeds/luci/applications/luci-app-kodexplorer
-rm -rf openwrt-package/verysync
-rm -rf openwrt-package/luci-app-verysync
-
 # apppppppp
 git clone --depth=1 https://github.com/DHDAXCW/dhdaxcw-app
 
