@@ -14,7 +14,6 @@ pushd package/community
 rm -rf ./package/lean/k3screenctrl
 # apppppppp
 git clone --depth=1 https://github.com/DHDAXCW/dhdaxcw-app
-git clone --depth=1 https://github.com/DHDAXCW/2305-ipk
 
 # Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld
