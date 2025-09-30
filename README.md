@@ -1,4 +1,4 @@
-## 机场推荐 [ENET--IEPL内网专线接入](https://www.easyenable.com/#/register?code=Ut7iWMrk)
+## 机场推荐 [ENET--IEPL内网专线接入](https://www.easyenable.com/#/register?code=zb7iVViF)
 # OpenWrt — RockChip多设备固件云编译
 - 支持rk3588，rk356x，rk3399，rk3328
 ### 源代码地址
