@@ -42,6 +42,7 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean ) &
         sudo timedatectl set-timezone "$TZ"
+        sudo rm -rf /home/runner/work/OpenWrt_RockChip/OpenWrt_RockChip && sudo reboot
         
     - name: Initialize Environment and Display System Info
       env:
