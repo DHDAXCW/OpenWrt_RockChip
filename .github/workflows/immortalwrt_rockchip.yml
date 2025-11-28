@@ -31,6 +31,17 @@ jobs:
     - name: Check out the project branch
       uses: actions/checkout@main
 
+    - name: Clean build caches
+      run: |
+        echo "Cleaning previous build artifacts and caches..."
+        sudo rm -rf $GITHUB_WORKSPACE/openwrt || true
+        sudo rm -rf $RUNNER_TEMP/* || true
+        sudo rm -rf $RUNNER_TOOL_CACHE/* || true
+        sudo apt-get -qq clean || true
+        sudo rm -rf /var/lib/apt/lists/* || true
+        rm -rf ~/.cache/* || true
+        echo "Cache cleanup complete."
+        
     - name: Initialize the compilation environment
       env:
         DEBIAN_FRONTEND: noninteractive
