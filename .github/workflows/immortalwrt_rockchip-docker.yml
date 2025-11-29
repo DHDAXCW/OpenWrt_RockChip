@@ -47,14 +47,6 @@ jobs:
         sudo rm -rf /var/lib/apt/lists/* || true
         rm -rf ~/.cache/* || true
         echo "Cache cleanup complete."
-        
-    - name: Restore openwrt dl cache
-      uses: actions/cache@v4
-      with:
-        path: openwrt/dl
-        key: ${{ runner.os }}-openwrt-dl-${{ env.REPO_BRANCH }}-${{ hashFiles('immortalwrt/**') }}
-        restore-keys: |
-          ${{ runner.os }}-openwrt-dl-${{ env.REPO_BRANCH }}-
           
     - name: Initialize the compilation environment
       env:
